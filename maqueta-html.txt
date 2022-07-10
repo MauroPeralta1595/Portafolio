@@ -1,0 +1,88 @@
+Texto font : Raleway;
+Iconos font : Awesome Font 5;
+
+
+Colores:
+
+Textos : #F0EDEB - Textos Generales
+
+         rgba (255 159 82 .97) - Contacto y main
+
+	 #A2A2A2 - campos form
+		
+	 #464646 - form completo
+
+Marcos : rgba (33 119 187 .7)
+
+contrastes de color: 
+
+#e2cdba : #1d2e3e
+
+#e9d7c5 : #10263b
+
+Textos:
+
+-------------------Header----------------------
+Logo - Menú de opciones (botón)
+	- Inicio - Main
+	- Sobre mi - About
+	- Hard-skills
+	- Soft-skills
+	- Formación - Academic
+	- Experiencia - Experience
+	- Contacto - Contact
+
+-------------------Inicio - Main---------------
+Avatar
+Mauro Peralta
+Desarrollador Front-End
+Diseño páginas web responsivas y funcionales
+
+Links-redes
+	github(img) - linkedin (img) - cv(img)
+
+-----------------Sobre mi - About---------------
+
+Sobre mi
+
+Actualmente soy alumno del programa Oracle Next Education. Estoy totalmente enfocado en mi formación/carrera como programador. Me defino como una persona muy constante, ordenada (en la vida y en el trabajo mismo), soy entusiasta, detallista y muy responsable, cuando empiezo algo me involucro por completo. Siempre busco ampliar mis conocimientos y demostrar mi potencial. Tengo facilidad para aprender y me adapto a cualquier situación y entorno de trabajo.
+
+-----------------Hard-skills------------------
+Hard-Skills
+box(logo html5 - html5) - box(logo javascript - Javascript) - box(logo CSS - CSS)
+box(logo C# - C#) - box(logo Python - Python) - box(logo Git - Git)
+
+-----------------Soft-skills------------------
+Soft-Skills
+box(img - Resolución de problemas) - box(img- Capacidad de adaptacion) - box(img - Trabajo en equipo)
+box(img- Manejo del tiempo y organización) - box(img - Buena Comunicación) - box(img - Creatividad)
+
+-----------------Formación académica - Academic ------------------
+Formación académica
+
+box ( img alura - Programación Web Full Stack - En curso-Alura)
+box ( img Polo Tecnológico - Programación en C# - En curso-Polo Tecnológico Mina Clavero)
+
+-----------------Experiencia profesional ------------------
+
+box ( img encriptador - Encriptador de texto - Challenge Oracle - Botón Repositorio - Boton Ver demo)
+
+box ( img ahorcado - Juego creado con HTML y JavaScript - Challenge Oracle - Botón Repositorio - Boton Ver demo)
+
+-----------------Contacto ------------------
+Contacto
+¿Quieres contactarme?
+Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.
+Nombre
+E-mail
+Asunto
+Mensaje
+botón Enviar mensaje
+
+-----------------Footer ------------------
+Desarrollado por Mauro Peralta
+2022
+
+
+
+

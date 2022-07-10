@@ -1,0 +1,18 @@
+.header__box__logotipo{
+    width: 85px;
+    height: 74px;
+}
+
+
+.header__logo{
+    width: fit-content;
+}
+
+.network__links{
+    width: 49px;
+    height: 48px;
+}
+
+.network__logo{
+    width: fit-content;
+}
