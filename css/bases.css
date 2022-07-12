@@ -1,0 +1,19 @@
+:root {
+    --background-general: #10263B;
+    --background-diferente: #1E2E3C;
+    --background-botones-hover: #0E4D9A;
+    --background-botones-normal: #041729;
+    --background-skills--academic: #F0FAFF;
+
+    --linea-divisoria: #0288D1;
+
+    --marco-avatar: rgba(33,119,187,.7);
+    --marcos-botones-normal--form-active: #2A7AE4;
+    --marcos-skills--academic: #2177BB;
+
+    --texto-blanco: #F0EDEB;
+    --texto-naranja: #FF9F52;
+    --texto-skills-negro: #111111;
+
+    --font-general: 'Raleway';
+}

@@ -61,7 +61,7 @@ box(img- Manejo del tiempo y organización) - box(img - Buena Comunicación) - b
 Formación académica
 
 box ( img alura - Programación Web Full Stack - En curso-Alura)
-box ( img Polo Tecnológico - Programación en C# - En curso-Polo Tecnológico Mina Clavero)
+box ( img Polo Tecnológico - Programación con C# - En curso-Polo Tecnológico Mina Clavero)
 
 -----------------Experiencia profesional ------------------
 
