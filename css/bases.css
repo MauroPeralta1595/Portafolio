@@ -7,7 +7,7 @@
 
     --linea-divisoria: #0288D1;
 
-    --marco-avatar: rgba(33,119,187,.7);
+    --marco-avatar: rgba(33,119,187,.5);
     --marcos-botones-normal--form-active: #2A7AE4;
     --marcos-skills--academic: #2177BB;
 
@@ -16,4 +16,43 @@
     --texto-skills-negro: #111111;
 
     --font-general: 'Raleway';
+}
+
+.page{
+    background-color: var(--background-general);
+    font-family: var(--font-general);
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer"
+    ;
+    grid-template-columns: 320px;
+    grid-template-rows: auto auto 40px ;
+}
+
+main{
+    height: 100%;
+    display: grid;
+    grid-template-areas:
+    "main-page"
+    "about"
+    "hard-skills"
+    "soft-skills"
+    "academic"
+    "experience"
+    "contact"
+    ;
+    grid-template-columns: 320px;
+    grid-template-rows: calc(100vh - 106px) 100vh 100vh 100vh 100vh 100vh 100vh;
+}
+
+.container{
+    display:grid;
+}
+
+.section-title{
+    font-size: 1.5rem;
+    color: var(--texto-blanco);
+    font-weight: 700;
 }

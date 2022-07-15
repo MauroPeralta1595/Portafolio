@@ -1,0 +1,10 @@
+.about{
+    grid-template-areas: 
+    "title"
+    "title"
+    "text";
+    grid-template-rows: auto auto auto;
+}
+
+
+
