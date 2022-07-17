@@ -1,3 +1,76 @@
-.academic__title{
+.academic{
+    grid-template-areas: 
+    "title"
+    "box1"
+    "box2";
+    grid-template-rows: 20% 40% 40%;
+    padding: 1rem;
+    color:var(--texto-blanco);
+    font-weight: 500;
+}
+
+.academic__box{
+    display:grid;
+    grid-template-areas:
+    "img"
+    "title"
+    "text";
+    grid-template-rows: 54% 13% 13% ;
+    max-height: fit-content;
+}
+
+.academic__box__img-container{
+    border: 2px solid var(--marcos-skills--academic);
+    display:grid;
+}
+
+.polo-tecnologico{
+    background-color: var(--background-skills--academic);
+}
+
+.One-alura-oracle{
+    grid-template-areas: 
+    ". Alura ."
+    "One . Oracle";
+    grid-template-columns: 1fr .15fr 1fr;
+    grid-template-rows: .85fr auto;
+    background-color: #193e6a;
+}
+
+.One-alura-oracle :nth-child(1){
+    grid-area: Alura;
+    grid-column: 1 / 4;
+    grid-row: 1 / 1;
+    max-width: 140px;
+}
+
+.One-alura-oracle :nth-child(2){
+    grid-area: One;
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+    max-width: 100px;
+}
+
+.One-alura-oracle :nth-child(3){
+    grid-area: Oracle;
+    grid-column: 3 / 4;
+    grid-row: 2 / 2;
+    max-width: 130px;
+}
+
+.academic__box__img{
     justify-self: center;
+    width: 99%;
+    align-self: center;
+    max-height: 120px;
+}
+
+.academic__box__title{
+    font-weight: 700;
+    font-size: 1.125rem;
+    align-self: center;
+}
+
+.academic__box__description{
+    font-size: 0.875rem ;
 }

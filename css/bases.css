@@ -3,7 +3,7 @@
     --background-diferente: #1E2E3C;
     --background-botones-hover: #0E4D9A;
     --background-botones-normal: #041729;
-    --background-skills--academic: #F0FAFF;
+    --background-skills--academic: #DCDCDC;
 
     --linea-divisoria: #0288D1;
 
@@ -44,7 +44,7 @@ main{
     "contact"
     ;
     grid-template-columns: auto;
-    grid-template-rows: calc(100vh - 40px) 105vh 115vh 115vh 100vh 100vh 100vh;
+    grid-template-rows: calc(100vh - 40px) 105vh 115vh 115vh 150vh 150vh 100vh;
 }
 
 .container{
