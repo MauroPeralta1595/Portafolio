@@ -6,7 +6,7 @@
     "subtitle"
     "diferencial"
     "network-links";
-    grid-template-rows: .5fr min-content min-content .19fr .1fr .3fr;
+    grid-template-rows: .43fr min-content min-content .15fr .1fr .27fr;
 }
 
 .main__avatar__container{

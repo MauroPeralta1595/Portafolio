@@ -1,8 +1,61 @@
+.hard-skills, .soft-skills{
+    grid-template-areas: 
+    "title"
+    "grid";
+    grid-template-rows: .6fr .7fr;
+    padding: 1rem;
+    font-weight: 700;
+}
+
 .skills__box__img-container{
-    width:32px;
-    height: 32px;
+    width: 35px;
+    height: 35px;
 }
 
 .image__box__image{
-    width: fit-content;
+    width: 35px;
+    height: 35px;
+}
+
+.reescalar{
+    width: 40px;
+    height: 40px;
+}
+
+.skills__box__container{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    align-items: center;
+    gap: 2rem 1rem;
+}
+
+.skills__box{
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--marcos-skills--academic);
+    box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
+    background-color: var(--background-skills--academic);
+    border-radius: 10px;
+}
+
+.skills__box ul{
+    width: 100%;
+    height: 125px;
+    display:grid;
+    grid-template-rows: 2fr 1fr;
+    align-items: center;
+}
+
+.skills__box li{
+    padding-left: .7rem;
+}
+
+.skills__box__img-container{
+    padding-top: 1.3rem;
+}
+
+.skills__name{
+    color: var(--background-general);
 }

@@ -2,9 +2,16 @@
     grid-template-areas: 
     "title"
     "title"
-    "text";
-    grid-template-rows: auto auto auto;
+    "space";
+    grid-template-rows: .5fr auto auto;
+    background-color: var(--background-diferente);
+    padding: 1rem;
+    color: var(--texto-blanco);
 }
 
+.about__text{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
 
 
