@@ -7,6 +7,7 @@
     padding: 1rem;
     color:var(--texto-blanco);
     font-weight: 500;
+    background-color: var(--background-diferente);
 }
 
 .academic__box{
@@ -25,7 +26,7 @@
 }
 
 .polo-tecnologico{
-    background-color: var(--background-skills--academic);
+    background-color: var(--background-box-skills--academic);
 }
 
 .One-alura-oracle{

@@ -1,0 +1,7 @@
+.footer{
+    background-color:var(--background-diferente);
+    display:grid;
+    align-items: center;
+    justify-items: center;
+    color: var(--texto-blanco)
+}

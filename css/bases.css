@@ -3,7 +3,7 @@
     --background-diferente: #1E2E3C;
     --background-botones-hover: #0E4D9A;
     --background-botones-normal: #041729;
-    --background-skills--academic: #DCDCDC;
+    --background-box-skills--academic: #DCDCDC;
 
     --linea-divisoria: #0288D1;
 
@@ -16,6 +16,8 @@
     --texto-skills-negro: #111111;
 
     --font-general: 'Raleway';
+    --texto-label: #A2A2A2;
+    --texto-inputs: #333333;
 }
 
 .page{
@@ -28,11 +30,10 @@
     "footer"
     ;
     grid-template-columns: auto;
-    grid-template-rows: auto auto 40px ;
+    grid-template-rows: auto auto 40px;
 }
 
 main{
-    height: 100%;
     display: grid;
     grid-template-areas:
     "main-page"
@@ -44,7 +45,7 @@ main{
     "contact"
     ;
     grid-template-columns: auto;
-    grid-template-rows: calc(100vh - 40px) 105vh 115vh 115vh 150vh 150vh 100vh;
+    grid-template-rows: calc(100vh - 40px) 105vh 115vh 115vh 150vh 170vh 140vh;
 }
 
 .container{

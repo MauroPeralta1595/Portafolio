@@ -1,8 +1,8 @@
 .about{
     grid-template-areas: 
     "title"
-    "title"
-    "space";
+    "text"
+    ".";
     grid-template-rows: .5fr auto auto;
     background-color: var(--background-diferente);
     padding: 1rem;

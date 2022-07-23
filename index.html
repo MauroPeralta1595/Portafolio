@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/skills.css">
     <link rel="stylesheet" href="css/academic.css">
+    <link rel="stylesheet" href="css/experience.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 
 </head>
@@ -219,11 +222,11 @@
                     <img src="assets/alura-logo.1647533644.svg" alt="Composición con logotipos de Alura Latam, Programa Oracle Next Education y Oracle" class="academic__box__img">
                     <img src="assets/OracleNextEducation.svg" alt="Composición con logotipos de Alura Latam, Programa Oracle Next Education y Oracle" class="academic__box__img">
                     <img src="assets/Oracle-logo.svg" alt="Composición con logotipos de Alura Latam, Programa Oracle Next Education y Oracle" class="academic__box__img">
-
                 </div>
                 <h3 class="academic__box__title">Programación Web Full Stack</h3>
                 <p class="academic__box__description">En curso - Programa Oracle Next Education - Alura Latam</p>
             </div>
+
             <div class="academic__box">
                 <div class="academic__box__img-container polo-tecnologico">
                     <img src="assets/polo-tecnologico.svg" alt="Logo de Polo tecnológico Mina Clavero"
@@ -239,28 +242,32 @@
 
             <div class="experience__box">
                 <div class="experience__box__img-box">
-                    <img src=""
+                    <img src="assets/Encriptador-de-textos (3).png"
                         alt="Imagen demostrativa del encriptador de textos funcionando" class="experience__box__img">
                 </div>
                 <h3 class="experience__box__title">Encriptador de texto</h3>
                 <p class="experience__box__description">Challenge Oracle Next Education - Alura Latam</p>
-                <span class="link repository-link"><a href="#"><button
-                            class="experience__box_button">Repositorio</button></a></span>
-                <span class="link page-link"><a href="#"><button class="experience__box_button">Ver
-                            Demo</button></a></span>
+                <div class="experience__button__container">
+                    <span class="link repository-link"><a href="#"><button
+                                class="experience__box__button">Repositorio</button></a></span>
+                    <span class="link page-link"><a href="#"><button class="experience__box__button">Ver
+                                Demo</button></a></span>
+                </div>
             </div>
 
             <div class="experience__box">
                 <div class="experience__box__img-box">
-                    <img src="" alt='Imagen demostrativa del juego "El ahorcado" funcionando'
+                    <img src="assets/Juego-del-Ahorcado.png" alt='Imagen demostrativa del juego "El ahorcado" funcionando'
                         class="experience__box__img">
                 </div>
                 <h3 class="experience__box__title">Juego creado con HTML y JavaScript</h3>
                 <p class="experience__box__description">Challenge Oracle Next Education - Alura Latam</p>
-                <span class="link repository-link"><a href="#"><button
-                            class="experience__box__button">Repositorio</button></a></span>
-                <span class="link page-link"><a href="#"><button class="experience__box__button">Ver
-                            Demo</button></a></span>
+                <div class="experience__button__container">
+                    <span class="link repository-link"><a href="#"><button
+                                class="experience__box__button">Repositorio</button></a></span>
+                    <span class="link page-link"><a href="#"><button class="experience__box__button">Ver
+                                Demo</button></a></span>
+                </div>
             </div>
         </section>
 
@@ -270,14 +277,19 @@
             <p class="contact__text">Complete el siguiente formulario y me pondré en contacto con usted lo antes
                 posible.</p>
             <form action="" class="contact__form">
-                <label for="name">Nombre</label>
-                <input type="text" class="contact__form__input" id="name">
-                <label for="email">E-mail</label>
-                <input type="email" class="contact__form__input" id="email">
-                <label for="subject"></label>
-                <input type="text" class="contact__form__input" id="subject" placeholder="Asunto">
-                <textarea name="mensaje-usuario" id="textarea" cols="30" rows="10" class="contact__form__textarea" placeholder="Mensaje"></textarea>
-                <button class="contact__form__boton" type="submit">Enviar mensaje</button>
+                <label for="name" class="contact__form__label">Nombre
+                    <input type="text" class="contact__form__input" id="name">
+                </label>
+                <label for="email" class="contact__form__label">E-mail
+                    <input type="email" class="contact__form__input" id="email">
+                </label>
+                <label for="subject" class="contact__form__label">
+                    <input type="text" class="contact__form__input" id="subject" placeholder="Asunto">
+                </label>
+                <label for="textarea" class="contact__form__label">
+                    <textarea name="mensaje-usuario" id="textarea" cols="30" rows="6" class="contact__form__textarea" placeholder="Mensaje"></textarea>
+                </label>
+                <button class="contact__form__button" type="submit">Enviar mensaje</button>
             </form>
         </section>
     </main>

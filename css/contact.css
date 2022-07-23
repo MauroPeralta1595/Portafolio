@@ -1,0 +1,93 @@
+.contact {
+    grid-template-areas:
+        "title"
+        "subtitle"
+        "text"
+        "form";
+    grid-template-rows: 9% max-content max-content auto;
+    padding: 1rem;
+    background-color: var(--background-diferente);
+}
+
+.contact__title, .contact__subtitle, .contact__text {
+    color : var(--texto-naranja)
+}
+
+.contact__subtitle, .contact__text{
+    font-weight: 500;
+}
+
+.contact__subtitle{
+    align-self: center;
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.contact__text{
+    padding-bottom: 2rem;
+}
+
+.contact__form{
+    display:grid;
+    grid-template-areas:
+        "name"
+        "email"
+        "subject"
+        "textarea"
+        "button";
+    row-gap: 2rem;
+    grid-template-rows: min-content min-content min-content min-content min-content;
+}
+
+.contact__form__label{
+    display:grid;
+    grid-template-areas:
+    "label"
+    "input";
+    grid-template-rows: min-content min-content;
+    background-color: var(--texto-blanco);
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+    row-gap: 6px;
+    border-radius: 6px;
+    border-bottom: 1px solid var(--texto-label);
+    color: var(--texto-label)
+}
+
+.contact__form__input{
+    border:none;
+    background-color: var(--texto-blanco);
+    font-size: .98rem;
+    outline: none;
+}
+
+.contact__form__input::placeholder{
+    color: var(--texto-label);
+}
+
+.contact__form :nth-child(3){
+    row-gap: 0;
+    padding: 1.1rem 1rem;
+}
+
+#textarea{
+    border: none;
+    background-color: var(--texto-blanco);
+    font-size: 1.1rem;
+    font-family: var(--font-general);
+    resize: none;
+    outline: none;
+    padding: 1.2rem 0;
+}
+
+.contact__form__button{
+    margin: .4rem 0;
+    padding: 16px 20px;
+    font-size: 1rem;
+    font-family: var(--font-general);
+    font-weight: 500;
+    background-color: var(--background-botones-normal);
+    color: var(--texto-blanco);
+    border: 1px solid var(--marcos-botones-normal--form-active);
+    justify-self: start;
+}
