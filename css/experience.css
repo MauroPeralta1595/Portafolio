@@ -57,3 +57,39 @@
 .repository-link{
     margin-right: 1rem;
 }
+
+
+
+@media screen and (min-width: 1024px){
+
+    .experience {
+        grid-template-rows: 15% 35% 40%;
+    }
+    
+    .experience__box {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        column-gap: 1rem;
+    }
+
+    .experience__box__img{
+        margin:0;
+    }
+
+    .experience__box__title{
+        font-size: 1.5rem;
+    }
+
+    .experience__box ul{
+        justify-self: center;
+    }
+
+    .experience :nth-child(3) ul{
+        grid-column: 1/2;
+    }
+
+    .experience :nth-child(3) .experience__box__img-box{
+        grid-column: 2/3;
+    }
+
+}

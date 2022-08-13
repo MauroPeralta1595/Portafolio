@@ -1,7 +1,14 @@
 .footer{
     background-color:var(--background-diferente);
-    display:grid;
-    align-items: center;
     justify-items: center;
     color: var(--texto-blanco)
+}
+
+.footer :nth-child(1){
+    align-self:flex-end;
+    margin: .3rem;
+}
+
+.footer :nth-child(2){
+    align-self:flex-start;
 }

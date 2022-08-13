@@ -25,48 +25,61 @@
         <div class="header__box__logotipo">
             <img src="assets/Logo-Mauro-Darkmode.svg" alt="Logotipo de Mauro Peralta" class="header__logo">
         </div>
+        <nav class="header__nav" id="header">
+            <ul>
+                <li class="nav__link"><a href="#about">Sobre mi</a></li>
+                <li class="nav__link"><a href="#hard-skills">Hard-Skills</a></li>
+                <li class="nav__link"><a href="#soft-skills">Soft-Skills</a></li>
+                <li class="nav__link"><a href="#academic">Formacion</a></li>
+                <li class="nav__link"><a href="#experience">Proyectos</a></li>
+                <li class="nav__link"><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section class="main container">
+        <section class="main container" id="main">
             <figure class="main__avatar__container">
                 <img src="assets/avatar__foto_2.jpg" alt="Imagen de perfil del autor de la página" class="avatar__img">
             </figure>
-            <h2 class="main__title">Mauro Peralta</h2>
+            <h2 class="main__title main__title--shadow">Mauro Peralta</h2>
             <hr class="main_divisor">
-            <h1 class="main__subtitle">Desarrollador Front-End</h1>
-            <h2 class="main__diferencial">Diseño páginas web funcionales y responsivas</h2>
+            <div class="main__subtitle__container"><h1 class="main__subtitle main__title--shadow">Desarrollador Web Front-End</h1>
+            </div>
+            <h2 class="main__diferencial diferencial--shadow">Diseño páginas web funcionales y responsivas</h2>
             <ul class="main__network">
                 <li class="network__links">
-                    <a href="#">
+                    <a href="https://github.com/MauroPeralta1595" target="_blank" rel="noopener noreferrer">
                         <img src="assets/github.svg" alt="Logo de Github con link al github del autor"
                             class="network__logo">
                     </a>
                 </li>
                 <li class="network__links">
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/mauro-peralta-057a5123a" target="_blank" rel="noopener noreferrer">
                         <img src="assets/linkedin.svg" alt="Logo de Linkedin con link al LinkedIn del autor"
                             class="network__logo">
                     </a>
                 </li>
                 <li class="network__links">
                     <a href="#">
-                        <img src="assets/cv-logo.svg" alt="Logo de Curriculum Vitae con link al Curriculum Vitae del autor" class="network__logo">
+                        <img src="assets/cv-logo.svg"
+                            alt="Logo de Curriculum Vitae con link al Curriculum Vitae del autor" class="network__logo">
                     </a>
                 </li>
             </ul>
         </section>
 
-        <section class="about container">
+        <section class="about container" id="about">
             <h2 class="about__title section-title">Sobre mi</h2>
             <p class="about__text"> Actualmente soy alumno del programa Oracle Next Education. Estoy totalmente enfocado
                 en mi formación/carrera como programador. Me defino como una persona muy constante, ordenada (en la vida
                 y en el trabajo mismo), soy entusiasta, detallista y muy responsable, cuando empiezo algo me involucro
                 por completo. Siempre busco ampliar mis conocimientos y demostrar mi potencial. Tengo facilidad para
                 aprender y me adapto a cualquier situación y entorno de trabajo.</p>
+            <img src="assets/avatar__foto.jpg" alt="Imagen de perfil del autor de la página" class="about__avatar__img">
         </section>
 
-        <section class="hard-skills container">
+        <section class="hard-skills container" id="hard-skills">
             <h2 class="skills__title section-title">Hard Skills</h2>
             <div class="skills__box__container">
                 <div class="skills__box">
@@ -137,9 +150,9 @@
             </div>
         </section>
 
-        <section class="soft-skills container">
+        <section class="soft-skills container" id="soft-skills">
             <h2 class="skills__title section-title">Soft Skills</h2>
-            
+
             <div class="skills__box__container">
                 <div class="skills__box">
                     <ul>
@@ -215,13 +228,19 @@
             </div>
         </section>
 
-        <section class="academic container">
+        <section class="academic container" id="academic">
             <h2 class="academic__title section-title">Formación académica</h2>
             <div class="academic__box">
                 <div class="academic__box__img-container One-alura-oracle">
-                    <img src="assets/alura-logo.1647533644.svg" alt="Composición con logotipos de Alura Latam, Programa Oracle Next Education y Oracle" class="academic__box__img">
-                    <img src="assets/OracleNextEducation.svg" alt="Composición con logotipos de Alura Latam, Programa Oracle Next Education y Oracle" class="academic__box__img">
-                    <img src="assets/Oracle-logo.svg" alt="Composición con logotipos de Alura Latam, Programa Oracle Next Education y Oracle" class="academic__box__img">
+                    <img src="assets/alura-logo.1647533644.svg"
+                        alt="Composición con logotipos de Alura Latam, Programa Oracle Next Education y Oracle"
+                        class="academic__box__img">
+                    <img src="assets/OracleNextEducation.svg"
+                        alt="Composición con logotipos de Alura Latam, Programa Oracle Next Education y Oracle"
+                        class="academic__box__img">
+                    <img src="assets/Oracle-logo.svg"
+                        alt="Composición con logotipos de Alura Latam, Programa Oracle Next Education y Oracle"
+                        class="academic__box__img">
                 </div>
                 <h3 class="academic__box__title">Programación Web Full Stack</h3>
                 <p class="academic__box__description">En curso - Programa Oracle Next Education - Alura Latam</p>
@@ -230,14 +249,14 @@
             <div class="academic__box">
                 <div class="academic__box__img-container polo-tecnologico">
                     <img src="assets/polo-tecnologico.svg" alt="Logo de Polo tecnológico Mina Clavero"
-                    class="academic__box__img">
+                        class="academic__box__img">
                 </div>
                 <h3 class="academic__box__title">Programación con C#</h3>
                 <p class="academic__box__description">En curso - Polo Tecnológico Mina Clavero</p>
             </div>
         </section>
 
-        <section class="experience container">
+        <section class="experience container" id="experience">
             <h2 class="experience__title section-title">Experiencia profesional</h2>
 
             <div class="experience__box">
@@ -245,37 +264,55 @@
                     <img src="assets/Encriptador-de-textos (3).png"
                         alt="Imagen demostrativa del encriptador de textos funcionando" class="experience__box__img">
                 </div>
-                <h3 class="experience__box__title">Encriptador de texto</h3>
-                <p class="experience__box__description">Challenge Oracle Next Education - Alura Latam</p>
-                <div class="experience__button__container">
-                    <span class="link repository-link"><a href="#"><button
-                                class="experience__box__button">Repositorio</button></a></span>
-                    <span class="link page-link"><a href="#"><button class="experience__box__button">Ver
-                                Demo</button></a></span>
-                </div>
+                <ul>
+                    <li>
+                        <h3 class="experience__box__title">Encriptador de texto</h3>
+                    </li>
+                    <li>
+                        <p class="experience__box__description">Challenge Oracle Next Education - Alura Latam</p>
+                    </li>
+                    <li class="experience__button__container">
+                        
+                        <span class="link repository-link"><a href="#">
+                            <button
+                                    class="experience__box__button">Repositorio</button></a></span>
+                        <span class="link page-link"><a href="#"><button class="experience__box__button">Ver
+                                    Demo</button></a></span>
+                    </li>
+                </ul>
             </div>
 
             <div class="experience__box">
                 <div class="experience__box__img-box">
-                    <img src="assets/Juego-del-Ahorcado.png" alt='Imagen demostrativa del juego "El ahorcado" funcionando'
-                        class="experience__box__img">
+                    <img src="assets/Juego-del-Ahorcado.png"
+                        alt='Imagen demostrativa del juego "El ahorcado" funcionando' class="experience__box__img">
                 </div>
-                <h3 class="experience__box__title">Juego creado con HTML y JavaScript</h3>
-                <p class="experience__box__description">Challenge Oracle Next Education - Alura Latam</p>
-                <div class="experience__button__container">
-                    <span class="link repository-link"><a href="#"><button
-                                class="experience__box__button">Repositorio</button></a></span>
-                    <span class="link page-link"><a href="#"><button class="experience__box__button">Ver
-                                Demo</button></a></span>
+                <ul>
+                    <li>
+                        <h3 class="experience__box__title">Juego creado con HTML y JavaScript</h3>
+                    </li>
+                    <li>
+                        <p class="experience__box__description">Challenge Oracle Next Education - Alura Latam</p>
+                    </li>
+                    <li class="experience__button__container">
+                        <span class="link repository-link"><a href="#"><button
+                                    class="experience__box__button">Repositorio</button></a></span>
+                        <span class="link page-link"><a href="#"><button class="experience__box__button">Ver
+                                    Demo</button></a></span>
+                    </li>
+                </ul>
                 </div>
+                
             </div>
         </section>
 
-        <section class="contact container">
+        <section class="contact container" id="contact">
             <h2 class="contact__title section-title">Contacto</h2>
             <h3 class="contact__subtitle">¿Quieres contactarme?</h3>
             <p class="contact__text">Complete el siguiente formulario y me pondré en contacto con usted lo antes
                 posible.</p>
+
+            <img src="assets/message.png" alt="Imagen representativa de comunicación con mensajes" class="contact__img">
             <form action="" class="contact__form">
                 <label for="name" class="contact__form__label">Nombre
                     <input type="text" class="contact__form__input" id="name">
@@ -287,7 +324,8 @@
                     <input type="text" class="contact__form__input" id="subject" placeholder="Asunto">
                 </label>
                 <label for="textarea" class="contact__form__label">
-                    <textarea name="mensaje-usuario" id="textarea" cols="30" rows="6" class="contact__form__textarea" placeholder="Mensaje"></textarea>
+                    <textarea name="mensaje-usuario" id="textarea" cols="30" rows="6" class="contact__form__textarea"
+                        placeholder="Mensaje"></textarea>
                 </label>
                 <button class="contact__form__button" type="submit">Enviar mensaje</button>
             </form>
@@ -295,7 +333,8 @@
     </main>
 
     <footer class="footer container">
-        <p class="footer__text">Desarrollado por Mauro Peralta - 2022</p>
+        <p class="footer__text">Desarrollado por Mauro Peralta </p>
+        <p class="footer__text">2022</p>
     </footer>
 
 </body>

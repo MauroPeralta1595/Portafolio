@@ -34,9 +34,8 @@
 .skills__box{
     width: 100%;
     height: 100%;
-    border: 2px solid var(--marcos-skills--academic);
     box-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
-    background-color: var(--background-box-skills--academic);
+    background-color: var(--background-box-skills);
     border-radius: 10px;
 }
 
@@ -57,5 +56,123 @@
 }
 
 .skills__name{
-    color: var(--background-general);
+    color: var(--texto-blanco);
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .hard-skills, .soft-skills{
+
+        grid-template-rows: .3fr .5fr .1fr;
+
+    }
+
+
+    .skills__box__container{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    
+    .hard-skills, .soft-skills{
+        grid-template-rows: auto 145px auto;
+        padding: .9rem;
+    }
+
+
+    .skills__box__container{
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        padding: 0 .2rem;
+        column-gap: .8rem;
+        justify-items: center;
+    }
+
+    .skills__box{
+        height: 138px;
+        width: 152px;
+    }
+
+    .skills__box ul{
+        align-self: center;
+        grid-template-rows: auto auto;
+    }
+
+    .skills__box ul li{
+        padding-left: .5rem;
+    }
+
+    .skills__name{
+        font-size: 1.2rem;
+        padding: 0 .1rem;
+    }
+
+    .soft-skills .skills__name{
+        font-size: 1rem;
+        padding: 0 0;
+    }
+
+    .soft-skills ul{
+        height: 100%;
+    }
+    
+    .soft-skills :nth-child(4) ul :nth-child(2){
+        padding: 0 0 0 .4rem;
+    }
+
+}
+
+@media screen and (min-width: 1050px) {
+
+  
+    .hard-skills, .soft-skills{
+        grid-template-rows: auto 145px auto;
+        padding: .9rem;
+    }
+
+
+    .skills__box__container{
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        padding: 0 .2rem;
+        column-gap: .8rem;
+        justify-items: center;
+    }
+
+    .skills__box{
+        height: 138px;
+        width: 190px;
+    }
+
+    .skills__box ul{
+        align-self: center;
+        grid-template-rows: auto auto;
+    }
+
+    .skills__box ul li{
+        padding-left: .5rem;
+    }
+
+    .skills__name{
+        font-size: 1.2rem;
+        padding: 0 .1rem;
+    }
+
+    .soft-skills .skills__name{
+        font-size: 1rem;
+        padding: 0 0;
+    }
+
+    .soft-skills ul{
+        height: 100%;
+    }
+    
+    .soft-skills :nth-child(4) ul :nth-child(2){
+        padding: 0 0 0 .4rem;
+    }
+
 }

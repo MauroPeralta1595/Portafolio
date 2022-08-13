@@ -15,7 +15,6 @@
     border-radius: 50%;
     border: 2px solid #0288D1;
     justify-self: center;
-    
 }
 
 .avatar__img{
@@ -42,7 +41,6 @@
     font-size: 1.625rem;
     font-weight: 700;
     text-align: center;
-    text-shadow: 4px 0px 4px rgba(0, 0, 0, 0.25);
 }
 
 .main__diferencial{
@@ -51,7 +49,7 @@
     font-weight: 700;
     text-align: start;
     padding:.6rem;
-    background-color: #1E2E3C;
+    background-color: var(--background-diferente);
 }
 
 .main__network{
@@ -67,4 +65,63 @@
 
 .network__logo{
     width: fit-content;
+}
+
+
+@media screen and (min-width: 438px){
+
+    .main__diferencial{
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .main__network{
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        gap: 5rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .main{
+        grid-template-rows: 25% 8% 20% auto 30%;
+    }
+
+    .main__title{
+        font-size: 3.6rem;
+        align-self: end;
+        padding: 1rem;
+    }
+
+    .main_divisor{
+        height: 2px;
+        background-color: var(--linea-divisoria);
+        align-self: center;
+        width: 35%;
+    }
+
+    .main__subtitle{
+        font-size: 2.8rem;
+    }
+
+    .main__diferencial{
+        padding:1.1rem;
+        font-size: 1.5rem;
+        align-self: center;
+        background-color: var(--background-diferente);
+    }
+
+    .main__avatar__container{
+        display:none;
+    }
+
+    .network__links{
+        width: 59px;
+        height: 60px;
+    }
+
 }

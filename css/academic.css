@@ -75,3 +75,45 @@
 .academic__box__description{
     font-size: 0.875rem ;
 }
+
+
+@media screen and (min-width: 768px) {
+
+    .academic{
+        grid-template-rows: 30% auto 0%;
+        grid-template-columns: 1fr 1fr;
+        gap:1rem;
+    }
+
+    .academic__title{
+        grid-area: 1/1/2/3;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    
+   
+    .academic{
+        grid-template-rows: 30% auto 0%;
+        grid-template-columns: auto auto;
+        gap:1rem;
+        column-gap: 1.5rem;
+    }
+
+    .academic__box__img-container{
+        width: 450px;
+    }
+
+    .academic__box{
+        justify-self: center;
+    }
+
+    .academic__box__title{
+        font-size: 1.4rem;
+    }
+
+    .academic__box__description{
+        font-size: 1.1rem;
+    }
+}

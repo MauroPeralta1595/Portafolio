@@ -7,3 +7,38 @@
 .header__logo{
     width: fit-content;
 }
+
+
+@media screen and (min-width: 1024px) {
+
+    .header{
+        display:grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: auto 63%;
+
+    }
+
+    .header__nav ul{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: auto auto auto auto auto auto;
+        align-items: center;
+        height: 100%;
+        padding-right: 1rem;
+        justify-items: center;
+    }
+
+    .nav__link a{
+        font-size: 1.1rem;
+        color:var(--texto-blanco);
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    .nav__link a:hover{
+        border-bottom: 1px solid var(--texto-naranja);
+        color: var(--texto-naranja);
+    }
+
+
+}
