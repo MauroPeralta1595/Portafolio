@@ -57,6 +57,7 @@
 
 .skills__name{
     color: var(--texto-blanco);
+    font-size: .9rem;
 }
 
 
@@ -95,11 +96,21 @@
     .skills__box{
         height: 138px;
         width: 152px;
+        transition:.3s;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
     }
+
+    
 
     .skills__box ul{
         align-self: center;
         grid-template-rows: auto auto;
+        height: 100%;
     }
 
     .skills__box ul li{
@@ -124,55 +135,62 @@
         padding: 0 0 0 .4rem;
     }
 
+    .skills__box:hover, .skills__box:focus , .skills__box:active {
+        box-shadow: 11px 11px 4px #0c1c2d;
+        background-color: #052645;
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+    }
+
+
+    .skills__box__container:hover .skills__box {
+      filter:grayscale(77%);
+    }
+
+    .skills__box__container .skills__box:hover {
+      filter:grayscale(0%);
+    }
+
+    .soft-skills .skills__box:hover .image__box__image{
+        filter:hue-rotate(164deg);
+    }
 }
 
 @media screen and (min-width: 1050px) {
 
-  
-    .hard-skills, .soft-skills{
-        grid-template-rows: auto 145px auto;
-        padding: .9rem;
+    .skills__box{
+        width: 160px;
     }
+        
+}
 
-
-    .skills__box__container{
-        grid-template-rows: auto;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        padding: 0 .2rem;
-        column-gap: .8rem;
-        justify-items: center;
-    }
+@media screen and (min-width: 1340px) {
 
     .skills__box{
-        height: 138px;
         width: 190px;
+        height: 152px;
     }
 
     .skills__box ul{
-        align-self: center;
-        grid-template-rows: auto auto;
-    }
-
-    .skills__box ul li{
-        padding-left: .5rem;
-    }
-
-    .skills__name{
-        font-size: 1.2rem;
-        padding: 0 .1rem;
+        height: 100%;
     }
 
     .soft-skills .skills__name{
-        font-size: 1rem;
+        font-size: 1.1rem;
         padding: 0 0;
     }
 
-    .soft-skills ul{
-        height: 100%;
-    }
-    
-    .soft-skills :nth-child(4) ul :nth-child(2){
-        padding: 0 0 0 .4rem;
+    .image__box__image{
+        width: 40px;
+        height: 40px;
     }
 
+    .reescalar{
+        width: 45px;
+        height: 45px;
+    }
+
+    .skills__box:hover{
+        box-shadow: 15px 15px 4px #0c1c2d;
+    }
 }

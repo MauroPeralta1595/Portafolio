@@ -1,7 +1,8 @@
 .footer{
-    background-color:var(--background-diferente);
+    background-color:var(--background-general);
     justify-items: center;
-    color: var(--texto-blanco)
+    color: var(--texto-blanco);
+    box-shadow: inset 0px 2px 2px #060e1633;
 }
 
 .footer :nth-child(1){

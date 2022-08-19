@@ -21,6 +21,10 @@
     --texto-inputs: #333333;
 }
 
+.html.active__navburger{
+    overflow-y: hidden;
+}
+
 .page{
     background-color: var(--background-general);
     font-family: var(--font-general);
@@ -32,6 +36,10 @@
     ;
     grid-template-columns: auto;
     grid-template-rows: auto auto 95px;
+}
+
+.page.active__navburger{
+    overflow-y: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -60,7 +68,7 @@ main{
     "contact"
     ;
     grid-template-columns: auto;
-    grid-template-rows: calc(100vh - 40px) 100vh 115vh 115vh 150vh 175vh 135vh;
+    grid-template-rows: calc(100vh - 90px) 105vh 115vh 115vh 150vh 175vh 135vh;
 }
 
 .container{
@@ -87,8 +95,9 @@ main{
     white-space: nowrap;
     height: fit-content;
     border-right: .15em solid var(--texto-naranja);
-    animation: typing 2s steps(29) normal both, blink 1s steps(1) infinite;
-    padding: .4rem 0;
+    animation: typing 1.5s steps(29) normal both, blink 1s steps(1) infinite;
+    padding: .2rem 0;
+    margin-top: .5rem;
 }
 
 @keyframes typing {
@@ -149,11 +158,6 @@ button:hover{
     box-shadow: 0px 0px 2px #F0EDEB , -1px -1px 1px #F0EDEB , 1px 1px 1px #F0EDEB;
 }
 
-
-/*button:hover{
-    box-shadow: 4px 4px 0px var(--background-botones-hover), -4px -4px 0px var(--background-botones-hover), inset 2px 2px 5px var(--background-botones-hover) ;
-}
-*/
 
 @media screen and (min-width: 438px){
 

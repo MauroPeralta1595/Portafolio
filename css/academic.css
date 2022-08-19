@@ -21,7 +21,7 @@
 }
 
 .academic__box__img-container{
-    border: 2px solid var(--marcos-skills--academic);
+    /*border: 2px solid var(--marcos-skills--academic);*/
     display:grid;
 }
 

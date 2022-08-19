@@ -126,7 +126,21 @@
         grid-column: 1/2;
         align-self: start;
         justify-self: center;
-        filter: drop-shadow(6px 6px 8px rgba(0, 0, 0, 0.384));
+        overflow: hidden;
+        transform: translatey(0px);
+        animation: float 6s ease-in-out infinite;
     }
+
+    @keyframes float {
+        0% {
+          transform: translatey(0px);
+        }
+        50% {
+          transform: translatey(-35px);
+        }
+        100% {
+          transform: translatey(0px);
+        }
+      }
 
 }
