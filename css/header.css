@@ -25,11 +25,6 @@
     margin-bottom: .5rem;
 }
 
-.nav__hamburger.active__navburger{
-    position:fixed;
-    right: 25px;
-}
-
 .nav__hamburger span{
     transition: all 0.3s ease-in-out;
 }

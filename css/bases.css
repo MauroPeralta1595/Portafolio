@@ -21,10 +21,6 @@
     --texto-inputs: #333333;
 }
 
-.html.active__navburger{
-    overflow-y: hidden;
-}
-
 .page{
     background-color: var(--background-general);
     font-family: var(--font-general);
@@ -38,9 +34,7 @@
     grid-template-rows: auto auto 95px;
 }
 
-.page.active__navburger{
-    overflow-y: hidden;
-}
+
 
 body::-webkit-scrollbar {
     width: 10px;
@@ -210,4 +204,13 @@ button:hover{
         text-shadow:  3px 3px 3px rgba(0, 0, 0, 0.5), 1px 1px 2px rgba(107, 105, 105, 0.4);
     }
 
+}
+
+@media screen and (max-width: 1023px){
+    .html.active__navburger{
+        overflow-y: hidden;
+    }
+    .page.active__navburger{
+        overflow-y: hidden;
+    }
 }
