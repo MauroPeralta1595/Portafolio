@@ -16,12 +16,12 @@
     "img"
     "title"
     "text";
-    grid-template-rows: 54% 13% 13% ;
+    grid-template-rows: 54% 15% 13% ;
     max-height: fit-content;
 }
 
-.academic__box__img-container{
-    /*border: 2px solid var(--marcos-skills--academic);*/
+.academic__box__img-container{ 
+    outline: 4px ridge var(--marcos-skills--academic);
     display:grid;
 }
 
@@ -69,26 +69,66 @@
 .academic__box__title{
     font-weight: 700;
     font-size: 1.125rem;
-    align-self: center;
 }
 
 .academic__box__description{
     font-size: 0.875rem ;
 }
 
+.academic__box__title,.academic__box__description{
+    align-self: end;
+}
 
-@media screen and (min-width: 768px) {
+
+@media screen and (min-width: 450px) and (orientation: landscape) {
+
+    .academic__box{
+        width: 405.55px;
+        justify-self: center;
+    }
+}
+
+
+@media screen and (min-width: 500px) and (orientation: landscape) {
 
     .academic{
         grid-template-rows: 30% auto 0%;
         grid-template-columns: 1fr 1fr;
-        gap:1rem;
+        gap:1.5rem;
     }
 
     .academic__title{
         grid-area: 1/1/2/3;
     }
 
+    .academic__box{
+        width: 100%;
+        justify-self: center;
+    }
+
+    .academic :nth-child(2){
+        grid-template-rows: 54% 15% 18% ;
+    }
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+    .academic__box{
+        width:70%;
+        justify-self: center;
+    }
+
+    .academic :nth-child(2){
+        grid-template-rows: 54% 15% 16% ;
+    }
+
+    .academic__box__title{
+        font-size: 1.4rem;
+    }
+
+    .academic__box__description{
+        font-size: 1.2rem;
+    }
+    
 }
 
 @media screen and (min-width: 1024px){

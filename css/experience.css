@@ -3,7 +3,7 @@
         "title"
         "box1"
         "box2";
-    grid-template-rows: 15% auto auto;
+    grid-template-rows: 12% auto auto;
     padding: 1rem;
     color: var(--texto-blanco);
 }
@@ -12,10 +12,9 @@
     display: grid;
     grid-template-areas:
         "img"
-        "title"
         "description"
-        "button";
-    grid-template-rows: min-content min-content min-content min-content;
+    ;
+    grid-template-rows: auto auto;
     align-items: center;
 }
 
@@ -31,16 +30,21 @@
     max-width: 752px;
 }
 
+
+.experience__box ul{
+    align-self: start;
+}
+
 .experience__box__title {
     grid-area: title;
     font-size: 1.1rem;
     font-weight: 700;
-    margin: .4rem 0;
+    margin: 0 0 .7rem 0 ;
 }
 
 .experience__box__description {
     grid-area: description;
-    margin: .4rem 0;
+    margin: .7rem 0;
 }
 
 .experience__box__button{
@@ -58,12 +62,79 @@
     margin-right: 1rem;
 }
 
+@media screen and (min-width: 375px){
+    .experience__box__title {
+        font-size: 1.2rem;
+    }
+    
+    .experience__box__description {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 500px) {
+
+    .experience {
+        grid-template-rows: 10% auto auto;
+    }
+    
+    .experience__box__img{
+        width: 80%;
+    }
+
+    .experience :nth-child(3){
+        justify-items: end;
+    }
+    .experience :nth-child(3) .experience__box__img-box{
+        display: grid;
+        justify-items: end;
+    }
+    .experience :nth-child(3) .experience__box__title{
+        text-align: end;
+    }
+    .experience :nth-child(3) .experience__button__container{
+        text-align: end;
+    }
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait){
+
+    .experience{
+        padding:2rem;
+    }
+
+    .experience__box__img{
+        width: 100%;
+    }
+
+    .experience__box{
+        width:90%;
+    }
+
+    .experience :nth-child(3){
+        justify-self: end;
+    }
+
+    .experience__box__title{
+        font-size: 1.5rem;
+    }
+    
+    .experience__box__description{
+        font-size: 1.2rem;
+    }
+
+    .experience__box__button{
+        font-size: 1.2rem;
+    }
+
+}
 
 
 @media screen and (min-width: 1024px){
 
     .experience {
         grid-template-rows: 15% 35% 40%;
+        padding: 0 2rem;
     }
     
     .experience__box {
@@ -82,6 +153,7 @@
 
     .experience__box ul{
         justify-self: center;
+        align-self: center;
     }
 
     .experience :nth-child(3) ul{

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mauro Peralta</title>
+    <title>Mauro Peralta | Desarrollador Web Front-End</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bases.css">
     <link rel="stylesheet" href="css/header.css">
@@ -77,6 +77,7 @@
                     </a>
                 </li>
             </ul>
+            <span class="back-to-top__button"><img src="assets/angle-up-solid.svg" class="arrow"></img></span>
         </section>
 
         <section class="about container" id="about">
@@ -90,7 +91,7 @@
         </section>
 
         <section class="hard-skills container" id="hard-skills">
-            <h2 class="skills__title section-title">Hard Skills</h2>
+            <h2 class="skills__title section-title">Habilidades</h2>
             <div class="skills__box__container">
                 <div class="skills__box">
                     <ul>
@@ -161,7 +162,7 @@
         </section>
 
         <section class="soft-skills container" id="soft-skills">
-            <h2 class="skills__title section-title">Soft Skills</h2>
+            <h2 class="skills__title section-title">Habilidades Blandas</h2>
 
             <div class="skills__box__container">
                 <div class="skills__box">
@@ -261,7 +262,7 @@
                     <img src="assets/polo-tecnologico.svg" alt="Logo de Polo tecnológico Mina Clavero"
                         class="academic__box__img">
                 </div>
-                <h3 class="academic__box__title">Programación  .Net 6</h3>
+                <h3 class="academic__box__title">Programación &nbsp.Net</h3>
                 <p class="academic__box__description">En curso - Polo Tecnológico Mina Clavero</p>
             </div>
         </section>
@@ -283,11 +284,10 @@
                     </li>
                     <li class="experience__button__container">
                         
-                        <span class="link repository-link"><a href="#">
-                            <button
-                                    class="experience__box__button">Repositorio</button></a></span>
-                        <span class="link page-link"><a href="#"><button class="experience__box__button">Ver
-                                    Demo</button></a></span>
+                        <span class="link repository-link"><a href="https://mauroperalta1595.github.io/Encriptador-de-textos--Alura-Challenge-ONE/" target="_blank" rel="noopener noreferrer">
+                            <button class="experience__box__button">Ver demo</button></a></span>
+                        <span class="link page-link"><a href="https://github.com/MauroPeralta1595/Encriptador-de-textos--Alura-Challenge-ONE" target="_blank" rel="noopener noreferrer">
+                            <button class="experience__box__button">GitHub</button></a></span>
                     </li>
                 </ul>
             </div>
@@ -305,10 +305,10 @@
                         <p class="experience__box__description">Challenge Oracle Next Education - Alura Latam</p>
                     </li>
                     <li class="experience__button__container">
-                        <span class="link repository-link"><a href="#"><button
-                                    class="experience__box__button">Repositorio</button></a></span>
-                        <span class="link page-link"><a href="#"><button class="experience__box__button">Ver
-                                    Demo</button></a></span>
+                        <span class="link repository-link"><a href="https://mauroperalta1595.github.io/Desafio-Ahorcado-ONE-Alura/" target="_blank" rel="noopener noreferrer">
+                            <button class="experience__box__button">Ver demo</button></a></span>
+                        <span class="link page-link"><a href="https://github.com/MauroPeralta1595/Desafio-Ahorcado-ONE-Alura" target="_blank" rel="noopener noreferrer">
+                            <button class="experience__box__button">GitHub</button></a></span>
                     </li>
                 </ul>
                 </div>
@@ -323,30 +323,41 @@
                 posible.</p>
 
             <img src="assets/message.png" alt="Imagen representativa de comunicación con mensajes" class="contact__img">
-            <form action="" class="contact__form">
+            
+            <form action="https://formsubmit.co/e557f9d82b822641ff07371b3d640a0f" method="POST" class="contact__form" id="contact__form">
                 <label for="name" class="contact__form__label">Nombre
-                    <input type="text" class="contact__form__input" id="name">
+                    <input type="text" class="contact__form__input" id="name" name="name">
                 </label>
-                <label for="email" class="contact__form__label">E-mail
-                    <input type="email" class="contact__form__input" id="email">
+                <label class="error" for="name" id="name_error">Este campo es obligatorio.</label>
+
+                <label for="email" class="contact__form__label" id="email__label">E-mail
+                    <input type="email" class="contact__form__input" id="email" name="email">
                 </label>
-                <label for="subject" class="contact__form__label">
-                    <input type="text" class="contact__form__input" id="subject" placeholder="Asunto">
+                <label class="error" for="email" id="email_error">Este campo es obligatorio.</label>
+
+                <label for="subject" class="contact__form__label" id="subject__label">
+                    <input type="text" class="contact__form__input" id="subject" placeholder="Asunto" name="subject">
                 </label>
+
                 <label for="textarea" class="contact__form__label">
                     <textarea name="mensaje-usuario" id="textarea" cols="30" rows="6" class="contact__form__textarea"
-                        placeholder="Mensaje"></textarea>
+                        placeholder="Mensaje" name="textarea"></textarea>
                 </label>
+
                 <button class="contact__form__button" type="submit">Enviar mensaje</button>
+                <input type="hidden" name="_captcha" value="false">
             </form>
         </section>
     </main>
 
     <footer class="footer container">
-        <p class="footer__text">Desarrollado por Mauro Peralta </p>
+        <p class="footer__text">Desarrollado por Mauro Peralta</p>
         <p class="footer__text">2022</p>
     </footer>
 
     <script src="scripts/active__navburger.js"></script>
+    <script src="scripts/scroll_to_top_button.js"></script>
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/validacion_formulario.js"></script>
 </body>
 </html>
