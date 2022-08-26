@@ -126,7 +126,6 @@
 }
 
 @media screen and (min-width: 375px){
-
     .main{
         grid-template-areas: 
         "avatar"
@@ -137,7 +136,6 @@
         "network-links";
         grid-template-rows: .43fr .09fr min-content .15fr .1fr .27fr;
     }
-
 }
 
 @media screen and (min-width: 438px){
