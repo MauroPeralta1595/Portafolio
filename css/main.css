@@ -138,7 +138,7 @@
         "subtitle"
         "diferencial"
         "network-links";
-        grid-template-rows: .43fr .09fr min-content .15fr .1fr .27fr;
+        grid-template-rows: .45fr .09fr min-content .15fr .1fr .27fr;
     }
 }
 
@@ -154,9 +154,11 @@
     .main__subtitle{
         font-size: 1.8rem;
     }
+
+    .main__network{
+        margin-bottom: 0;
+    }
 }
-
-
 
 
 @media screen and (min-width: 500px) and (orientation: landscape) {
