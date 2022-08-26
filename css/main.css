@@ -111,6 +111,35 @@
     }
 }
 
+@media screen and (max-width: 375px){
+
+    .main{
+        grid-template-areas: 
+        "avatar"
+        "title"
+        "line"
+        "subtitle"
+        "diferencial"
+        "network-links";
+        grid-template-rows: .48fr .09fr min-content .15fr .1fr .27fr;
+    }
+}
+
+@media screen and (min-width: 375px){
+
+    .main{
+        grid-template-areas: 
+        "avatar"
+        "title"
+        "line"
+        "subtitle"
+        "diferencial"
+        "network-links";
+        grid-template-rows: .43fr .09fr min-content .15fr .1fr .27fr;
+    }
+
+}
+
 @media screen and (min-width: 438px){
 
     .main__diferencial{
