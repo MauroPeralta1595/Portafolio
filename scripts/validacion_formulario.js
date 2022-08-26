@@ -47,7 +47,7 @@ $(function() {
         var dataString = 'name='+ name + '&email=' + email + '&subject=' + subject + '&textarea=' + textarea;
         $.ajax({
             method: "POST",
-            url: "https://formsubmit.co/ajax/mauroperalta1595@gmail.com",
+            url: "https://formsubmit.co/ajax/676b1aa032ca54d23e4e5e871085ee7f",
             dataType: "json",
             data: dataString,
             accepts: 'application/json',
