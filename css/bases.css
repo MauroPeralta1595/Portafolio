@@ -66,7 +66,7 @@ main{
     "contact"
     ;
     grid-template-columns: auto;
-    grid-template-rows: calc(100vh - 90px) .9fr 1fr 1fr 1.1fr 1.4fr 1fr;
+    grid-template-rows: calc(100vh - 90px) .9fr 1fr 1fr 1.1fr 1.4fr 1.03fr;
 }
 
 .container{
@@ -130,6 +130,7 @@ button{
     overflow: hidden;
     transition: 0.7s all ease;
     z-index: 1;
+    cursor:pointer;
 }
 
 button::before{
@@ -156,6 +157,12 @@ button:hover{
     box-shadow: 0px 0px 2px #F0EDEB , -1px -1px 1px #F0EDEB , 1px 1px 1px #F0EDEB;
 }
 
+@media screen and (max-width: 340px){
+    main{
+        grid-template-rows: .7fr .9fr 1fr 1fr 1.1fr 1.4fr 1fr;
+    }
+}
+
 @media screen and (min-width: 500px) and (orientation: landscape) {
 
     main{
@@ -169,7 +176,7 @@ button:hover{
 @media screen and (min-width: 768px) and (orientation:portrait) {
 
     main{
-        grid-template-rows: calc(93vh - 40px) 100vh 100vh 100vh 110vh 165vh 105vh;
+        grid-template-rows: calc(100vh - 90px) 100vh 100vh 100vh 110vh 165vh 105vh;
     }
 
     .section-title{
@@ -183,11 +190,11 @@ button:hover{
 @media screen and (min-width: 1024px) {
     
     main{
-        grid-template-rows: calc(93vh - 40px) 105vh 90vh 100vh 110vh 225vh 140vh;
+        grid-template-rows: calc(100vh - 90px) 100vh 100vh 100vh 110vh 180vh calc(100vh + 140px);
     }
 
     .section-title{
-        font-size: 3rem;
+        font-size: 2.5rem;
         letter-spacing: .1rem;
         text-shadow: 2px 2px 2px rgba(59, 59, 59, 0.3), 3px 3px 2px rgba(0, 0, 0, 0.3);
     }
@@ -211,3 +218,29 @@ button:hover{
         overflow-y: hidden;
     }
 }
+
+
+@media screen and (max-height:580px) and (min-width: 1024px){
+
+    main{
+        grid-template-rows: 1fr .8fr 1fr 1fr .7fr 1.8fr 1fr;
+        height: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    
+    main{
+        grid-template-rows: calc(100vh - 90px) 100vh 100vh 100vh 110vh 180vh calc(100vh + 50px);
+    }
+
+}
+
+@media screen and (min-width: 1700px) {
+
+    main{
+        grid-template-rows: calc(100vh - 90px) 95vh 100vh 100vh 110vh 170vh 90vh;
+    }
+
+} 

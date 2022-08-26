@@ -109,11 +109,11 @@
     
     .skills__box{
         max-width: none;
-        height: 160px;
+        height: 145px;
     }
     
     .skills__name{
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 }
 
@@ -154,12 +154,10 @@
 }
 
 @media screen and (min-width: 1024px){
-    
-    .hard-skills, .soft-skills{
-        grid-template-rows: auto 145px auto;
-        padding: .9rem;
+
+    .skills__title{
+        align-self: end;
     }
-    
     
     .skills__box__container{
         grid-template-rows: auto;
@@ -184,7 +182,7 @@
     }
 
     .skills__name{
-        font-size: 1.2rem;
+        font-size: 1rem;
         padding: 0 .1rem;
     }
 
@@ -214,8 +212,8 @@
 @media screen and (min-width: 1340px) {
 
     .skills__box{
-        width: 190px;
-        height: 152px;
+        width: 185px;
+        height: 148px;
     }
 
     .skills__box ul{
@@ -223,7 +221,7 @@
     }
 
     .soft-skills .skills__name{
-        font-size: 1.1rem;
+        font-size: 1rem;
         padding: 0 0;
     }
 

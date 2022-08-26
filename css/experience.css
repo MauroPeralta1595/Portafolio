@@ -133,8 +133,9 @@
 @media screen and (min-width: 1024px){
 
     .experience {
-        grid-template-rows: 15% 35% 40%;
+        grid-template-rows: 15% auto auto;
         padding: 0 2rem;
+        margin-bottom: 2rem;
     }
     
     .experience__box {
@@ -145,15 +146,20 @@
 
     .experience__box__img{
         margin:0;
+        width: 100%;
     }
 
     .experience__box__title{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .experience__box ul{
         justify-self: center;
         align-self: center;
+    }
+
+    .experience__box__description{
+        font-size: 1rem;
     }
 
     .experience :nth-child(3) ul{
@@ -164,4 +170,21 @@
         grid-column: 2/3;
     }
 
+    .experience__box__button{
+        font-size: 1rem;
+    }
+
+    .experience :nth-child(3){
+        justify-items: start;
+        text-align: start;
+    }
+
+}
+
+@media screen and (min-width: 1440px){
+    .experience {
+        grid-template-rows: 15% auto auto;
+        padding: 0 2rem;
+        margin-bottom: 2rem;
+    }
 }

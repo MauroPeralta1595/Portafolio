@@ -92,6 +92,7 @@
 .back-to-top__button:hover{
     transform: scale(1.05);
     background-color: var(--texto-naranja);
+    cursor:pointer;
 }
 
 
@@ -172,7 +173,13 @@
 
 @media screen and (min-width: 768px) and (orientation: portrait) {
     .main{
-        grid-template-rows: 30% 10% 8% 9% 21% 20%;
+        grid-template-rows: 40% 10% 5% 9% 17% 20%;
+    }
+
+    .main__avatar__container{
+        width: 220px;
+        height: 220px;
+        border: 7px inset #0288D1;
     }
 
     .main__title{
@@ -193,32 +200,55 @@
     }
 
     .main__diferencial{
-        padding:1.1rem;
-        font-size: 1.5rem;
+        padding:1.5rem;
+        font-size: 1.7rem;
         align-self: center;
-        background-color: var(--background-diferente);
     }
 
     .main__network{
+        margin-top: 1rem;
         align-self: start;
     }
 
     .network__links{
-        width: 59px;
-        height: 60px;
+        width: 79px;
+        height: 80px;
     }
 
+    .back-to-top__button{
+        width:70px;
+        height: 70px;
+    }
+
+}
+
+@media screen and (min-width: 800px) and (orientation: portrait) {
+    
+    .main{
+        grid-template-rows: 35% 10% 5% 9% 17% 20%;
+    }
+
+    .main__network{
+        margin-top: 1rem;
+        align-self: center;
+    }
+
+    .main__diferencial{
+        margin-top: 1rem;
+        padding:2rem;
+        font-size: 2rem;
+    }
 
 }
 
 @media screen and (min-width: 1024px) {
 
     .main{
-        grid-template-rows: 25% 8% 20% auto 30%;
+        grid-template-rows: 26% 8% 20% auto 30%;
     }
 
     .main__title{
-        font-size: 3.6rem;
+        font-size: 3.3rem;
         align-self: end;
         padding: 1rem;
     }
@@ -231,23 +261,30 @@
     }
 
     .main__subtitle{
-        font-size: 2.8rem;
+        font-size: 2.6rem;
     }
 
     .main__diferencial{
         padding:1.1rem;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         align-self: center;
         background-color: var(--background-diferente);
+        letter-spacing: .07rem;
     }
 
     .main__avatar__container{
         display:none;
     }
 
+    .main__network{
+        align-self: center;
+        width: 50%;
+        justify-self: center;
+    }
+
     .network__links{
-        width: 59px;
-        height: 60px;
+        width: 55px;
+        height: 56px;
         transition:.5s;
         -webkit-transform: translateZ(0);
         transform: translateZ(0);
@@ -295,8 +332,32 @@
     }
 
     .back-to-top__button{
-        bottom: 20px;
+        bottom: 25px;
         right: 30px;
     }
 
+}
+
+
+@media screen and (min-width: 1440px) {
+    .main__title{
+        font-size: 3.5rem;
+        align-self: end;
+        padding: 1rem;
+    }
+
+    .main__subtitle{
+        font-size: 3rem;
+    }
+
+    .main__diferencial{
+        padding:1.3rem;
+        font-size: 1.6rem;
+        align-self: center;
+    }
+
+    .network__links{
+        width: 62px;
+        height: 63px;
+    }
 }

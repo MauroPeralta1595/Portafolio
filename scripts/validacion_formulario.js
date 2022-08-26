@@ -30,12 +30,24 @@ $(function() {
 
         var subject = $("input#subject").val();
 
+        if (subject == "") {
+            $("label#subject_error").show();
+            $("input#subject").focus();
+            return false;
+        }
+
         var textarea = $("#textarea").val();
+
+        if (textarea == "") {
+            $("label#textarea_error").show();
+            $("#textarea").focus();
+            return false;
+        }
 
         var dataString = 'name='+ name + '&email=' + email + '&subject=' + subject + '&textarea=' + textarea;
         $.ajax({
             method: "POST",
-            url: "https://formsubmit.co/ajax/e557f9d82b822641ff07371b3d640a0f",
+            url: "https://formsubmit.co/ajax/mauroperalta1595@gmail.com",
             dataType: "json",
             data: dataString,
             accepts: 'application/json',

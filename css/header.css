@@ -77,7 +77,7 @@
 .nav__menu ul{
     display:flex;
     flex-direction: column;
-    height: 70%;
+    height: 75%;
     row-gap: .1rem;
     align-items: center;
     justify-content: space-evenly;
@@ -91,6 +91,40 @@
     text-decoration: none;
     position: relative;
     transition: color .3s ease-in-out;
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+    .header__box__logotipo{
+        width: 120px;
+        height: 120px;
+        padding: .7rem 1.5rem
+    }
+
+    .header__logo{
+        width: 120px;
+        height: 120px;
+    }
+
+    .nav__hamburger{
+        width: 58px;
+    }
+
+    .nav__hamburger .line{
+        height: 11px;
+    }
+
+    .nav__hamburger.active__navburger .line1 {
+        transform: translateY(18px) rotate(45deg);
+    }
+    
+    .nav__hamburger.active__navburger .line2 {
+        transform: rotate(45deg) ;
+        opacity: 0; 
+    }
+        
+    .nav__hamburger.active__navburger .line3 {
+        transform: translateY(-18px) rotate(-45deg);
+    }
 }
 
 
@@ -156,4 +190,23 @@
     .header__nav{
         grid-template-columns: auto 63%;
     }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .header__box__logotipo{
+        width: 105px;
+        height: 94px;
+        padding: .7rem 1.5rem;
+    }
+    
+    .header__logo{
+        width: 105px;
+        height: 94px;
+    }
+
+    .nav__link a{
+        font-size: 1.3rem
+    }
+
 }

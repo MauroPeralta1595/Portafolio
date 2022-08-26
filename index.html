@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mauro Peralta | Desarrollador Web Front-End</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bases.css">
     <link rel="stylesheet" href="css/header.css">
@@ -71,7 +72,7 @@
                     </a>
                 </li>
                 <li class="network__links">
-                    <a href="#">
+                    <a href="https://drive.google.com/file/d/1qwqE6hZ5K5No9B-tNGrmBvqJjuaAYLH2/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                         <img src="assets/cv-logo.svg"
                             alt="Logo de Curriculum Vitae con link al Curriculum Vitae del autor" class="network__logo">
                     </a>
@@ -324,7 +325,7 @@
 
             <img src="assets/message.png" alt="Imagen representativa de comunicación con mensajes" class="contact__img">
             
-            <form action="https://formsubmit.co/e557f9d82b822641ff07371b3d640a0f" method="POST" class="contact__form" id="contact__form">
+            <form action="https://formsubmit.co/mauroperalta1595@gmail.com" method="POST" class="contact__form" id="contact__form">
                 <label for="name" class="contact__form__label">Nombre
                     <input type="text" class="contact__form__input" id="name" name="name">
                 </label>
@@ -338,11 +339,13 @@
                 <label for="subject" class="contact__form__label" id="subject__label">
                     <input type="text" class="contact__form__input" id="subject" placeholder="Asunto" name="subject">
                 </label>
+                <label class="error" for="subject" id="subject_error">Este campo es obligatorio.</label>
 
                 <label for="textarea" class="contact__form__label">
                     <textarea name="mensaje-usuario" id="textarea" cols="30" rows="6" class="contact__form__textarea"
                         placeholder="Mensaje" name="textarea"></textarea>
                 </label>
+                <label class="error" for="textarea" id="textarea_error">Este campo es obligatorio.</label>
 
                 <button class="contact__form__button" type="submit">Enviar mensaje</button>
                 <input type="hidden" name="_captcha" value="false">
