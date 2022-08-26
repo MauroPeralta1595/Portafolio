@@ -65,6 +65,7 @@
 .network__links{
     width: 49px;
     height: 48px;
+    margin-bottom: 1.1rem;
 }
 
 .back-to-top__button{
@@ -122,10 +123,6 @@
         "diferencial"
         "network-links";
         grid-template-rows: .48fr .09fr min-content .15fr .1fr .27fr;
-    }
-
-    .main__network{
-        margin-bottom: 1.1rem;
     }
 }
 
