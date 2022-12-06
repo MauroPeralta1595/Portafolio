@@ -128,11 +128,23 @@ form .error{
     text-align: center;
     background-color: #0b1928;
     padding: 2rem .7rem;
-    grid-template-rows: auto auto auto min-content;
-    height: 450px;
+    height: 420px;
     border: 4px outset #0288d1;
 }
 
+#message--error{
+    display: grid;
+    margin-top: 1rem;
+    justify-items: center;
+    color: #f0edeb;
+    justify-self: center;
+    text-align: center;
+    background-color: #0b1928;
+    padding: 2rem .7rem;
+    height: 420px;
+    border: 4px outset #ec0000;
+    max-width: 450px;
+}
 
 .message__check {
     width: 200px;
@@ -144,10 +156,12 @@ form .error{
     font-size: 1.8rem;
     font-weight: 700;
     text-align: center;
+    align-self: center;
 }
 
 .message__subtitle {
     font-size: 1.3rem;
+    align-self: center;
 }
 
 .message__text {
@@ -157,6 +171,17 @@ form .error{
     border-bottom: 2px solid #0288d1;
     padding: .6rem;
     font-weight: 500;
+    align-self: center;
+}
+
+.message__text--error {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    border-top: 2px solid #ec0000;
+    border-bottom: 2px solid #ec0000;
+    padding: .6rem;
+    font-weight: 500;
+    align-self: center;
 }
 
 @media screen and (min-width: 500px) {
@@ -282,7 +307,6 @@ form .error{
     }
 
     #message {
-        grid-template-rows: 51% 12% 15% min-content;
         margin-top: 0;
     }
 
